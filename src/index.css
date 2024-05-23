@@ -48,12 +48,12 @@ code {
 }
 
 .ant-btn-primary {
-	background: #1890ff !important;
+	background: #017410 !important;
 }
 
 .ant-btn-primary:focus,
 .ant-btn-primary:hover {
-	background: #40a9ff !important;
+	background: #028117 !important;
 }
 
 .ant-table .ant-table-container .ant-table-content table thead.ant-table-thead {

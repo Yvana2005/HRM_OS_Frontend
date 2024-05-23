@@ -9,6 +9,7 @@ import QuickLinks from "./QuickLinks";
 import { useDispatch } from "react-redux";
 import jwtDecode from "jwt-decode";
 import checkTokenExp from "../../utils/checkTokenExp";
+import logo from "../../assets/images/sai-i-lama-logo.png"
 
 const { Header: AntHeader, Content, Sider } = Layout;
 
@@ -99,16 +100,22 @@ function Main({ children }) {
 						{collapsed ? (
 							""
 						) : (
-							<div>
-								<h2
-									className='text-white text-center mt-2 mb-1 '
-									style={{ fontSize: "25px" }}>
-									HRM
-									<strong style={{ color: "#6ECCAF	", fontWeight: "bold" }}>
-										{" "}
-										OS
-									</strong>
-								</h2>
+							<div style={{
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+								/*height: "100vh"  Assurez-vous d'ajuster la hauteur selon vos besoins */
+							  }}>
+								<img
+                                    src={logo}
+                                    alt="logo"
+                                    style={{
+                                       width: "50%",
+                                       height: "50%",
+				  
+                  
+                                    }}
+                                /> 
 							</div>
 						)}
 						{isLogged && (

@@ -145,7 +145,7 @@ const AddUser = () => {
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Prenom'
+									label='Prénom'
 									name='firstName'
 									rules={[
 										{
@@ -169,7 +169,7 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='User Name'
+									label='Nom utilisateur'
 									name='userName'
 									rules={[
 										{
@@ -273,7 +273,7 @@ const AddUser = () => {
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Joining Date'
+									label="Date d'embauche"
 									name='joinDate'
 									rules={[
 										{
@@ -285,13 +285,13 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Leave Date'
+									label='Date de congés'
 									name='leaveDate'>
 									<DatePicker className='date-picker hr-staffs-date-picker' />
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Employee ID'
+									label="ID de l'employé"
 									name='employeeId'
 									rules={[
 										{
@@ -336,7 +336,7 @@ const AddUser = () => {
 											message: "Veuillez saisir votre Statut d'emploi!",
 										},
 									]}
-									label='Employee Status'>
+									label="Statut de l'employé">
 									<Select
 										placeholder='Selectionnez un Statut'
 										allowClear
@@ -354,7 +354,7 @@ const AddUser = () => {
 								<Form.Item
 									name={"departmentId"}
 									style={{ marginBottom: "10px" }}
-									label='Departement'
+									label='Département'
 									rules={[
 										{ required: true, message: "Veuillez saisir votre Departement!" },
 									]}>
@@ -405,7 +405,7 @@ const AddUser = () => {
 									rules={[
 										{ required: true, message: "Veuillez saisir votre Department!" },
 									]}
-									label='Shift'
+									label='Période de travail'
 									name={"shiftId"}
 									style={{ marginBottom: "10px" }}>
 									<Select
@@ -518,7 +518,7 @@ const AddUser = () => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Designation Start Date'
+									label='Date de prise de service'
 									rules={[{ required: true, message: "Please input date!" }]}
 									name='designationStartDate'>
 									<DatePicker className='date-picker hr-staffs-date-picker' />

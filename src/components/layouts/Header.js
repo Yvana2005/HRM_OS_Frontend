@@ -26,7 +26,7 @@ function Header({ onPress, collapsed, handleCollapsed }) {
 	const isLogged = localStorage.getItem("isLogged");
 	const user = localStorage.getItem("user");
 	const redirectToHome = () => {
-		window.location.href = "https://youtube.com";
+		window.location.href = "http://192.168.1.176/saii";
 	};
 
 	const items = [

@@ -28,7 +28,8 @@ import { NavLink } from "react-router-dom";
 import { disable } from "workbox-navigation-preload";
 import getPermissions from "../../utils/getPermissions";
 import getUserFromToken from "../../utils/getUserFromToken";
-// import styles from "./Sidenav.module.css";
+//import logo from "../../assets/images/sai-i-lama-logo.png"
+import styles from "./Sidenav.module.css";
 
 const Sidenav = ({ color, sideNavOpenKeys }) => {
 	const user = getUserFromToken();
@@ -37,17 +38,10 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		return permissions?.includes(item ? item : "");
 	};
 	// console.log("haspermission", hasPermission("create-user"));
-	<img
-                src={logo}
-                alt="logo"
-                style={{
-                  width: "50%",
-                  height: "50%",
-				  
-                  
-                }}
-    /> 
+	
+	
 	const menu = [
+
 		
 		{
 			label: (
@@ -177,7 +171,13 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-shift") && {
-			label: "SHIFT",
+			label: (
+				<Tooltip title="PERIODE DE TRAVAIL">
+					
+						<span>PERIODE DE TRAVAIL</span>
+					
+				</Tooltip>
+				),
 			key: "shift",
 			icon: <ClockCircleOutlined />,
 			children: [
@@ -194,7 +194,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-employmentStatus") && {
-			label: "EMPLOYEMENT",
+			label: "STATUT EMPLOIE",
 			key: "employementStatus",
 			
 			icon: <RocketOutlined />,
@@ -202,7 +202,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-employmentStatus") && {
 					label: (
 						<NavLink to='/admin/employment-status'>
-							<span>Status</span>
+							<span>StatuT</span>
 						</NavLink>
 					),
 					key: "employementStatus",

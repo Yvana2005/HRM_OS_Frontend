@@ -54,7 +54,7 @@ function CustomTable({ list }) {
 		// },
 		{
 			id: 5,
-			title: "Designation",
+			title: "Désignation",
 			dataIndex: "designationHistory",
 			key: "designationHistory",
 			render: (record) =>
@@ -72,7 +72,7 @@ function CustomTable({ list }) {
 		},
 		{
 			id: 8,
-			title: "Departement",
+			title: "Département",
 			dataIndex: "department",
 			key: "department",
 			render: (record) => (record?.name ? record?.name : "N/A"),
@@ -80,7 +80,7 @@ function CustomTable({ list }) {
 
 		{
 			id: 9,
-			title: "Shift",
+			title: "Période de travail",
 			dataIndex: "shift",
 			key: "shift",
 			render: (record) => (record?.name ? record?.name : "N/A"),
