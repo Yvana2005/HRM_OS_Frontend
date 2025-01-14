@@ -96,7 +96,7 @@ function App() {
 				pauseOnHover
 				theme='light'
 			/>
-			<BrowserRouter>
+			<BrowserRouter basename="/hrm/">
 				{/* <TestComp/> */}
 				<Main>
 					<Routes>

@@ -74,7 +74,7 @@
 		"workbox-streams": "^6.5.4"
 	},
 	"scripts": {
-		"start": "PORT=3001 react-scripts start",
+		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"gh-pages": "gh-pages -d build",
 		"test": "react-scripts test",
@@ -86,7 +86,7 @@
 			"react-app/jest"
 		]
 	},
-	"homepage": "./",
+	"homepage": "/hrm/",
 	"browserslist": {
 		"production": [
 			">0.2%",
